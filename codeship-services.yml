@@ -1,3 +1,6 @@
 app:
-  image: busybox
+  build:
+    image: test-image
+    dockerfile_path: Dockerfile
   encrypted_env_file: environment.encrypted
+  cached: false
